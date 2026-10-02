@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maddox Huang — IT Support &amp; Network Security, Auckland</title>
-<meta name="description" content="Maddox (Yigeng) Huang — IT engineer in Auckland, New Zealand. Endpoint management, enterprise IT operations, networks and cybersecurity. AUT BCIS, Cisco CCST.">
+<title>Maddox Huang — Infrastructure &amp; Network Operations, Auckland</title>
+<meta name="description" content="Maddox (Yigeng) Huang — junior infrastructure, systems and network operations in Auckland, New Zealand. Endpoint security, Linux, Docker, Windows Server. AUT BCIS (Networks and Cybersecurity), Cisco CCST.">
 <link rel="canonical" href="https://maddoxhuang.com/">
 <meta name="theme-color" content="#0f1720">
 
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Maddox Huang — IT Support &amp; Network Security">
-<meta property="og:description" content="IT engineer in Auckland, New Zealand. Endpoint management, enterprise IT operations, networks and cybersecurity.">
+<meta property="og:title" content="Maddox Huang — Infrastructure &amp; Network Operations">
+<meta property="og:description" content="Junior infrastructure, systems and network operations in Auckland, New Zealand. Endpoint security, Linux, Docker, Windows Server, Cisco CCST.">
 <meta property="og:url" content="https://maddoxhuang.com/">
 <meta name="twitter:card" content="summary">
 
@@ -85,7 +85,7 @@ ul.points li:last-child{margin-bottom:0}
 
 /* ---------- lab cards ---------- */
 .cards{display:grid; gap:14px}
-@media(min-width:620px){ .cards{grid-template-columns:1fr 1fr} }
+@media(min-width:620px){ .cards{grid-template-columns:1fr 1fr} .card.wide{grid-column:1/-1} }
 .card{
   background:var(--surface); border:1px solid var(--line);
   border-radius:var(--radius); padding:16px 18px;
@@ -133,17 +133,19 @@ footer{
 <div class="wrap">
 
 <header>
-  <h1>Maddox Huang <span class="legal">(Yigeng Huang)</span></h1>
-  <p class="role">IT Support &middot; Network &amp; Systems &middot; Security Operations</p>
+  <h1>Maddox Huang</h1>
+  <p class="role">Infrastructure &middot; Network Operations &middot; Security Operations</p>
   <p class="meta">
     <span><i class="dot"></i>Auckland, New Zealand</span>
-    <span><i class="dot"></i>Open to IT roles</span>
+    <span><i class="dot"></i>Open to junior infrastructure &amp; network roles</span>
   </p>
   <p class="lede">
-    I keep end-user fleets and the infrastructure behind them running. Most recently I handled
-    endpoint management and enterprise IT operations for a mixed Windows, macOS and Linux fleet
-    in Beijing; before that I read Networks and Cybersecurity at AUT. I like the problems that
-    start as &ldquo;it just stopped working&rdquo; and end in a packet capture or an event log.
+    I&rsquo;m an AUT Networks and Cybersecurity graduate looking for hands-on infrastructure and
+    network operations work in Auckland. Most recently I was an IT Engineer in Beijing, where the
+    job ran from endpoint support to administering DLP and zero-trust platforms, upgrading a
+    firewall over a serial console and handling a server-room cooling failure. At home I run a
+    NAS-based lab I&rsquo;ve been building on for over a decade. I like the problems that start as
+    &ldquo;it just stopped working&rdquo; and end in a packet capture or an event log.
   </p>
 </header>
 
@@ -157,12 +159,15 @@ footer{
     </div>
     <p class="entry-sub">Beijing, China</p>
     <ul class="points">
-      <li>Endpoint support and device management across a mixed Windows, macOS and Ubuntu fleet.</li>
-      <li>Deployed and troubleshot DLP and zero-trust endpoint clients, including root-cause work on
-          a Linux workstation where the MDM agent contended for DRM master and dropped the video signal.</li>
+      <li>Administered the IP-guard endpoint security / DLP platform across a mixed Windows, macOS and
+          Ubuntu fleet; deployed and troubleshot zero-trust endpoint clients.</li>
+      <li>Upgraded a blade-server next-generation firewall via serial console.</li>
+      <li>Handled an emergency server-room cooling failure, avoiding equipment overheating and downtime.</li>
+      <li>Root-caused a Linux workstation video-signal drop to an MDM agent contending for DRM master.</li>
       <li>Resolved Microsoft 365 authentication failures, Windows domain trust breakdowns and
-          BitLocker recovery across the fleet.</li>
-      <li>Managed asset inventory and acted as liaison with hardware and software vendors.</li>
+          BitLocker recovery issues.</li>
+      <li>Worked with endpoint-security and zero-trust platform vendors on fault investigation and
+          escalations.</li>
     </ul>
   </div>
 </section>
@@ -171,29 +176,30 @@ footer{
   <h2>Technical Skills</h2>
 
   <div class="skillgroup">
-    <div class="label">Endpoint &amp; Identity</div>
-    <div class="chips">
-      <span class="chip">Windows 10/11</span><span class="chip">macOS</span><span class="chip">Ubuntu</span>
-      <span class="chip">Active Directory</span><span class="chip">Group Policy</span>
-      <span class="chip">Microsoft 365</span><span class="chip">BitLocker</span><span class="chip">MDM</span>
-    </div>
-  </div>
-
-  <div class="skillgroup">
-    <div class="label">Network &amp; Infrastructure</div>
+    <div class="label">Network</div>
     <div class="chips">
       <span class="chip">TCP/IP</span><span class="chip">VLAN &amp; routing</span><span class="chip">DNS</span>
-      <span class="chip">Reverse proxy</span><span class="chip">VPN</span><span class="chip">Docker</span>
-      <span class="chip">Linux</span><span class="chip">ZFS</span><span class="chip">NAS / QNAP</span>
+      <span class="chip">DHCP</span><span class="chip">Firewalls</span><span class="chip">VPN</span>
+      <span class="chip">Reverse proxy</span><span class="chip">Cisco router/switch config</span>
     </div>
   </div>
 
   <div class="skillgroup">
-    <div class="label">Security</div>
+    <div class="label">Systems &amp; Infrastructure</div>
+    <div class="chips">
+      <span class="chip">Linux</span><span class="chip">Docker</span><span class="chip">ZFS</span>
+      <span class="chip">NAS / QNAP</span><span class="chip">Windows Server</span>
+      <span class="chip">Active Directory</span><span class="chip">Group Policy</span>
+    </div>
+  </div>
+
+  <div class="skillgroup">
+    <div class="label">Endpoint &amp; Security</div>
     <div class="chips">
       <span class="chip">DLP</span><span class="chip">Zero Trust</span><span class="chip">Hardening</span>
       <span class="chip">Log &amp; SIEM concepts</span><span class="chip">Host forensics</span>
-      <span class="chip">Phishing analysis</span>
+      <span class="chip">Windows 10/11</span><span class="chip">macOS</span>
+      <span class="chip">Microsoft 365</span><span class="chip">BitLocker</span><span class="chip">MDM</span>
     </div>
   </div>
 
@@ -201,13 +207,13 @@ footer{
     <div class="label">Tooling</div>
     <div class="chips">
       <span class="chip">Python</span><span class="chip">PowerShell</span><span class="chip">Bash</span>
-      <span class="chip">SQLite</span><span class="chip">Git</span>
+      <span class="chip">Git</span>
     </div>
   </div>
 </section>
 
 <section id="lab">
-  <h2>Home Lab &amp; Self-Directed Work</h2>
+  <h2>Home Lab &amp; Projects</h2>
   <div class="cards">
 
     <div class="card">
@@ -219,9 +225,10 @@ footer{
 
     <div class="card">
       <span class="tag">NETWORKING</span>
-      <h3>Segmented home network</h3>
-      <p>A virtualised router appliance as a bypass gateway, with remote access designed around
-         CGNAT constraints using tunnelled and mesh-VPN approaches instead of port forwarding.</p>
+      <h3>Home network &amp; remote access</h3>
+      <p>A virtualised router appliance (iStoreOS) running on the NAS as a bypass gateway, with
+         external access through a TLS reverse proxy. Assessed CGNAT limits for remote access and
+         evaluated tunnelled and mesh-VPN alternatives to exposing ports.</p>
     </div>
 
     <div class="card">
@@ -239,6 +246,15 @@ footer{
          to separate a compromised credential from a local device exfiltrating data.</p>
     </div>
 
+    <div class="card wide">
+      <span class="tag">ACADEMIC PROJECT &middot; AUT</span>
+      <h3>Windows domain migration</h3>
+      <p>Five-person team project: replaced a peer-to-peer network with a Windows Server 2016
+         Active Directory domain &mdash; DHCP scopes, DNS, role-based groups, roaming profiles,
+         Group Policy firewall rules and Windows Server Backup to a remote share. Co-authored the
+         20-page operating manual.</p>
+    </div>
+
   </div>
 </section>
 
@@ -248,13 +264,13 @@ footer{
   <div class="entry">
     <div class="entry-head">
       <h3>Bachelor of Computer and Information Sciences</h3>
-      <span class="when">Auckland University of Technology</span>
+      <span class="when">2021 &ndash; 2025</span>
     </div>
-    <p class="entry-sub">Major in Networks and Cybersecurity</p>
+    <p class="entry-sub">Auckland University of Technology &middot; Major in Networks and Cybersecurity</p>
   </div>
 
   <ul class="certs">
-    <li>Cisco Certified Support Technician (CCST) <span class="state">Certified</span></li>
+    <li>Cisco Certified Support Technician (CCST) &ndash; Networking <span class="state">Certified Aug 2025</span></li>
     <li>CompTIA Security+ (SY0-701) <span class="state">In progress</span></li>
   </ul>
 </section>
@@ -293,7 +309,7 @@ footer{
   "@type":"Person",
   "name":"Maddox Huang",
   "alternateName":"Yigeng Huang",
-  "jobTitle":"IT Engineer",
+  "description":"Junior infrastructure, systems and network operations in Auckland, New Zealand.",
   "url":"https://maddoxhuang.com/",
   "address":{"@type":"PostalAddress","addressLocality":"Auckland","addressCountry":"NZ"},
   "alumniOf":{"@type":"CollegeOrUniversity","name":"Auckland University of Technology"},
